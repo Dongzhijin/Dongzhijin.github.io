@@ -68,3 +68,16 @@ a {
         padding: 1em 0 0.5em 0;
     }
 }
+section {
+    margin: 2em 0;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+section h2 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    color: #333;
+}
