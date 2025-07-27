@@ -3,77 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
+    <title>My Projects - Zhijin Dong</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">ZD</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link active">All Projects</a></li>
+            </ul>
+        </div>
     </nav>
-    <main>
-        <h1>My Projects</h1>
-        <section>
-            <h2>Post-Training of Large Models with Preference Optimization</h2>
-            <p><em>Algorithm Intern, Nanbeige Lab in Beijing Huapin Borui Network Technology Co., Ltd.</em> <strong>Jul 2024 -- Apr 2025</strong></p>
-            <ul>
-                <li>Designed a reward model evaluation framework that assesses alignment quality based on the performance of RM-selected responses on downstream benchmarks, enabling practical and model-specific RM selection. Built upon this, developed an efficient online DPO pipeline integrating RM-guided preference mining, GPT response mixing, and fine-grained iterative training, achieving faster convergence and substantial gains on alignment benchmarks. <a href="https://soapy-peach-9af.notion.site/reward-model-online-DPO-22faab47b6b480a8956aee5d67123d97">[Blog]</a></li>
-                <li>Proposed a selective alignment strategy for post-training large language models, prioritizing high-impact tokens within preference pairs based on token-level log-probability differences. <a href="https://arxiv.org/abs/2507.07725">[Paper]</a></li>
-                <li>Constructed and cleaned a high-quality 85k-scale STEM multiple-choice dataset for scientific reasoning, incorporating rule-based filtering, reflection-based evaluation, and repetition penalty to enhance LLM scientific reasoning performance under Zero-RL training. <a href="https://github.com/Dongzhijin/STEM-MCQ-Dataset">[Blog]</a></li>
-            </ul>
+
+    <section class="projects-hero">
+        <div class="container">
+            <div class="projects-hero-content">
+                <h1 class="projects-title">All Research Projects</h1>
+                <p class="projects-subtitle">A comprehensive overview of my research work and contributions</p>
+            </div>
+        </div>
+    </section>
+    <main class="container">
+        <section class="section">
+            <div class="project-detail">
+                <div class="project-header">
+                    <h2 class="project-title">Post-Training of Large Models with Preference Optimization</h2>
+                    <div class="project-meta">
+                        <span class="project-role">Algorithm Intern, Nanbeige Lab</span>
+                        <span class="project-duration">Jul 2024 -- Apr 2025</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <ul class="project-achievements">
+                        <li>Designed a reward model evaluation framework that assesses alignment quality based on the performance of RM-selected responses on downstream benchmarks, enabling practical and model-specific RM selection. Built upon this, developed an efficient online DPO pipeline integrating RM-guided preference mining, GPT response mixing, and fine-grained iterative training, achieving faster convergence and substantial gains on alignment benchmarks. <a href="https://soapy-peach-9af.notion.site/reward-model-online-DPO-22faab47b6b480a8956aee5d67123d97" class="project-link"><i class="fas fa-external-link-alt"></i> Blog</a></li>
+                        <li>Proposed a selective alignment strategy for post-training large language models, prioritizing high-impact tokens within preference pairs based on token-level log-probability differences. <a href="https://arxiv.org/abs/2507.07725" class="project-link"><i class="fas fa-file-pdf"></i> Paper</a></li>
+                        <li>Constructed and cleaned a high-quality 85k-scale STEM multiple-choice dataset for scientific reasoning, incorporating rule-based filtering, reflection-based evaluation, and repetition penalty to enhance LLM scientific reasoning performance under Zero-RL training. <a href="https://github.com/Dongzhijin/STEM-MCQ-Dataset" class="project-link"><i class="fab fa-github"></i> Dataset</a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Multi-Normal Prototypes Learning for Weakly Supervised Anomaly Detection</h2>
-            <p><em>Research Assistant, School of Software and Microelectronics, Peking University</em> <strong>Sep 2023 -- Jul 2024</strong></p>
-            <ul>
-                <li>Proposed a novel framework combining reconstruction learning with multi-normal prototype learning for detecting anomalies with limited labeled data.</li>
-                <li>Introduced a dynamic sample weighting strategy to estimate the likelihood of unlabeled samples being normal, mitigating contamination.</li>
-                <li>Designed a unified anomaly scoring module that integrates reconstruction error, latent features, and prototype similarity.</li>
-                <li>Achieved state-of-the-art performance on 15 benchmark datasets (AUC-PR/AUC-ROC), and robust generalization to unseen anomaly types.</li>
-            </ul>
+
+        <section class="section">
+            <div class="project-detail">
+                <div class="project-header">
+                    <h2 class="project-title">Multi-Normal Prototypes Learning for Weakly Supervised Anomaly Detection</h2>
+                    <div class="project-meta">
+                        <span class="project-role">Research Assistant, School of Software and Microelectronics, Peking University</span>
+                        <span class="project-duration">Sep 2023 -- Jul 2024</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <ul class="project-achievements">
+                        <li>Proposed a novel framework combining reconstruction learning with multi-normal prototype learning for detecting anomalies with limited labeled data.</li>
+                        <li>Introduced a dynamic sample weighting strategy to estimate the likelihood of unlabeled samples being normal, mitigating contamination.</li>
+                        <li>Designed a unified anomaly scoring module that integrates reconstruction error, latent features, and prototype similarity.</li>
+                        <li>Achieved state-of-the-art performance on 15 benchmark datasets (AUC-PR/AUC-ROC), and robust generalization to unseen anomaly types.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Bridging the Information Gap Between Domain-Specific Models and General LLMs for Personalized Recommendation</h2>
-            <p><em>Research Assistant, School of Software and Microelectronics, Peking University</em> <strong>Sep 2023 -- Apr 2024</strong></p>
-            <ul>
-                <li>Proposed LLMRec, a hybrid recommendation framework bridging domain-specific models and general-purpose LLMs.</li>
-                <li>Designed a prompt-based user intent encoder that transforms behavior sequences into semantically meaningful inputs for LLMs.</li>
-                <li>Implemented a dual-encoder structure with supervised contrastive learning to align user representations from LLM and sequential models.</li>
-                <li>Improved recommendation accuracy in cold-start and interest-drifting scenarios, achieving SOTA on Amazon and MIND datasets.</li>
-            </ul>
+
+        <section class="section">
+            <div class="project-detail">
+                <div class="project-header">
+                    <h2 class="project-title">Bridging the Information Gap Between Domain-Specific Models and General LLMs for Personalized Recommendation</h2>
+                    <div class="project-meta">
+                        <span class="project-role">Research Assistant, School of Software and Microelectronics, Peking University</span>
+                        <span class="project-duration">Sep 2023 -- Apr 2024</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <ul class="project-achievements">
+                        <li>Proposed LLMRec, a hybrid recommendation framework bridging domain-specific models and general-purpose LLMs.</li>
+                        <li>Designed a prompt-based user intent encoder that transforms behavior sequences into semantically meaningful inputs for LLMs.</li>
+                        <li>Implemented a dual-encoder structure with supervised contrastive learning to align user representations from LLM and sequential models.</li>
+                        <li>Improved recommendation accuracy in cold-start and interest-drifting scenarios, achieving SOTA on Amazon and MIND datasets.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>The Research on Stock Price Trend Prediction Based on Multimodal Data</h2>
-            <p><em>Undergraduate Thesis Researcher, School of Information Science and Technology, Peking University</em> <strong>Jan 2023 -- Jun 2023</strong></p>
-            <ul>
-                <li>Proposed a multimodal attention fusion model based on deep learning, capable of processing inputs from multiple modalities and effectively integrating features to accurately predict future stock price trends.</li>
-            </ul>
+
+        <section class="section">
+            <div class="project-detail">
+                <div class="project-header">
+                    <h2 class="project-title">The Research on Stock Price Trend Prediction Based on Multimodal Data</h2>
+                    <div class="project-meta">
+                        <span class="project-role">Undergraduate Thesis Researcher, School of Information Science and Technology, Peking University</span>
+                        <span class="project-duration">Jan 2023 -- Jun 2023</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <ul class="project-achievements">
+                        <li>Proposed a multimodal attention fusion model based on deep learning, capable of processing inputs from multiple modalities and effectively integrating features to accurately predict future stock price trends.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Object Detection with YOLO Models</h2>
-            <p><em>Algorithm Intern, Beijing Cike Qidong Technology Co., Ltd.</em> <strong>Jul 2022 -- Nov 2022</strong></p>
-            <ul>
-                <li>Conducted research on object detection using YOLO models, improving accuracy via data augmentation, loss design, and model architecture adjustments.</li>
-            </ul>
+
+        <section class="section">
+            <div class="project-detail">
+                <div class="project-header">
+                    <h2 class="project-title">Object Detection with YOLO Models</h2>
+                    <div class="project-meta">
+                        <span class="project-role">Algorithm Intern, Beijing Cike Qidong Technology Co., Ltd.</span>
+                        <span class="project-duration">Jul 2022 -- Nov 2022</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <ul class="project-achievements">
+                        <li>Conducted research on object detection using YOLO models, improving accuracy via data augmentation, loss design, and model architecture adjustments.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Human Pose Estimation with Self-Attention</h2>
-            <p><em>Research Intern, AI Innovation Center, Peking University</em> <strong>Oct 2021 -- Jun 2022</strong></p>
-            <ul>
-                <li>Participated in research on human pose estimation, using self-attention mechanisms to address self-occlusion.</li>
-            </ul>
+
+        <section class="section">
+            <div class="project-detail">
+                <div class="project-header">
+                    <h2 class="project-title">Human Pose Estimation with Self-Attention</h2>
+                    <div class="project-meta">
+                        <span class="project-role">Research Intern, AI Innovation Center, Peking University</span>
+                        <span class="project-duration">Oct 2021 -- Jun 2022</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <ul class="project-achievements">
+                        <li>Participated in research on human pose estimation, using self-attention mechanisms to address self-occlusion.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Embodied Intelligence for Visual-audio Navigation</h2>
-            <p><em>Summer Research Intern, Frontier Computing Center, Peking University</em> <strong>Jun 2021 -- Oct 2021</strong></p>
-            <ul>
-                <li>Conducted research on sound source localization using deep reinforcement learning, combining visual and auditory information.</li>
-                <li>Designed explicit fusion methods to extract sound direction probability distributions, improving task success rate.</li>
-            </ul>
+
+        <section class="section">
+            <div class="project-detail">
+                <div class="project-header">
+                    <h2 class="project-title">Embodied Intelligence for Visual-audio Navigation</h2>
+                    <div class="project-meta">
+                        <span class="project-role">Summer Research Intern, Frontier Computing Center, Peking University</span>
+                        <span class="project-duration">Jun 2021 -- Oct 2021</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <ul class="project-achievements">
+                        <li>Conducted research on sound source localization using deep reinforcement learning, combining visual and auditory information.</li>
+                        <li>Designed explicit fusion methods to extract sound direction probability distributions, improving task success rate.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
+
+        <div class="back-to-home">
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Back to Home
+            </a>
+        </div>
     </main>
-    <footer>
-        <p>&copy; 2025 Zhijin Dong. All rights reserved.</p>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Zhijin Dong. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>

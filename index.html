@@ -5,70 +5,245 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zhijin Dong's Personal Homepage</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-    </nav>
-    <header>
-        <div style="text-align: center;">
-            <!-- <img src="profile.jpg" alt="Zhijin Dong" style="width: 150px; height: 150px; border-radius: 50%; margin-bottom: 1em;"> -->
-            <h1>Welcome to Zhijin Dong's Personal Website</h1>
-            <p>Graduate Student at Peking University | AI Enthusiast | Researcher</p>
-            <p>Email: <a href="mailto:2301210605@pku.edu.cn">2301210605@pku.edu.cn</a></p>
-            <p>GitHub: <a href="https://github.com/Dongzhijin">Dongzhijin</a></p>
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">ZD</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#research" class="nav-link">Research Interests</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#awards" class="nav-link">Awards</a></li>
+            </ul>
         </div>
-    </header>
-    <main>
-        <section>
-            <h2>Profile</h2>
-            <p>Hi, I am a graduate student specializing in Artificial Intelligence at Peking University. Before that, I completed my undergraduate studies in Intelligent Science and Technology with a double major in Economics at the Peking university. I am passionate about advancing AGI and solving real-world problems using AI technologies.
-            </p>
+    </nav>
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Zhijin Dong</h1>
+                <h2 class="hero-subtitle">AI Enthusiast & Graduate Student</h2>
+                <p class="hero-description">Specializing in Artificial Intelligence at Peking University</p>
+                <div class="hero-contact">
+                    <a href="mailto:2301210605@pku.edu.cn" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        2301210605@pku.edu.cn
+                    </a>
+                    <a href="https://github.com/Dongzhijin" class="contact-item">
+                        <i class="fab fa-github"></i>
+                        Dongzhijin
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="tech-circle">
+                    <div class="orbit orbit-1"></div>
+                    <div class="orbit orbit-2"></div>
+                    <div class="orbit orbit-3"></div>
+                    <div class="center-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="container">
+        <section id="about" class="section">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="section-content">
+                <p>Hi, I am a graduate student specializing in Artificial Intelligence at Peking University. Before that, I completed my undergraduate studies in Intelligent Science and Technology with a double major in Economics at Peking University. I am passionate about advancing AGI and solving real-world problems using AI technologies.</p>
+            </div>
         </section>
-        <section>
-            <h2>Research Interests</h2>
-            <ul>
-                <li>Post-Training of Large Language Models (LLMs) or Multi-modal Large Models</li>
-                <li>Focused on building LLM agents with capabilities in CoT reasoning, tool use, long-term memory, and self-correction for robust decision-making in complex environments.</li>
-            </ul>
+
+        <section id="research" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Research Interests</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="section-content">
+                <div class="research-grid">
+                    <div class="research-item">
+                        <i class="fas fa-brain"></i>
+                        <h3>Post-Training of Large Language Models</h3>
+                        <p>Focus on LLMs and Multi-modal Large Models preference optimization</p>
+                    </div>
+                    <div class="research-item">
+                        <i class="fas fa-robot"></i>
+                        <h3>AI Agents</h3>
+                        <p>Building LLM agents with reasoning, tool use, long-term memory, and self-correction</p>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Featured Projects</h2>
-            <ul>
-                <li><strong>Not All Preferences are What You Need for Post-Training</strong>: Designed a selective alignment strategy to optimize user preferences during post-training.</li>
-                <li><strong>Post-Training of Large Models with Preference Optimization</strong>: Developed reward model evaluation frameworks and efficient online DPO pipelines.</li>
-                <li><strong>Multi-Normal Prototypes Learning for Weakly Supervised Anomaly Detection</strong>: Proposed frameworks for anomaly detection with limited labeled data.</li>
-                
-            </ul>
+        <section id="projects" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="section-content">
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Selective Alignment for Post-Training</h3>
+                        <p>Designed a selective alignment strategy to optimize user preferences during post-training</p>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Preference Optimization Pipeline</h3>
+                        <p>Developed reward model evaluation frameworks and efficient online DPO pipelines</p>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>STEM Reasoning Optimization with Rule-based RL </h3>
+                        <p>Constructed and cleaned a high-quality 85k-scale STEM multiple-choice dataset for scientific reasoning, incorporating rule-based filtering, reflection-based evaluation, and repetition penalty to enhance LLM scientific reasoning performance under Zero-RL training</p>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Anomaly Detection Framework</h3>
+                        <p>Proposed frameworks for anomaly detection with limited labeled data</p>
+                    </div>
+                </div>
+                <div class="more-projects">
+                    <a href="projects.html" class="more-projects-link">
+                        <i class="fas fa-arrow-right"></i>
+                        View All Projects
+                    </a>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Publications</h2>
-            <ul>
-                <li><strong>Zhijin Dong</strong>. "Not All Preferences are What You Need for Post-Training: Selective Alignment Strategy for Preference Optimization." <em>arXiv</em>, 2025. <a href="https://arxiv.org/abs/2507.07725">[PDF]</a> <a href="https://github.com/Dongzhijin/SDPO">[Code]</a></li>
-                <li><strong>Zhijin Dong</strong>, Hongzhi Liu*, Boyuan Ren, Weimin Xiong, Zhonghai Wu. "Multi-Normal Prototypes Learning for Weakly Supervised Anomaly Detection." <em>arXiv</em>, 2024. <a href="https://arxiv.org/abs/2408.14498">[PDF]</a> <a href="https://github.com/Dongzhijin/MNPWAD">[Code]</a>, Under review.</li>
-                <li>Wenxuan Zhang, Hongzhi Liu*, <strong>Zhijin Dong</strong>, Yingpeng Du, Chen Zhu, Yang Song, Hengshu Zhu, Zhonghai Wu. "Bridging the Information Gap Between Domain-Specific Model and General LLM for Personalized Recommendation." <em>Web and Big Data</em>, Springer Nature Singapore, 2024, pp. 280--294. <a href="https://doi.org/10.1007/978-981-97-7232-2_19">[PDF]</a></li>
-            </ul>
+        <section id="publications" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Publications</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="section-content">
+                <div class="publication-list">
+                    <div class="publication-item">
+                        <div class="publication-year">2025</div>
+                        <div class="publication-content">
+                            <h4><strong>Zhijin Dong</strong>. "Not All Preferences are What You Need for Post-Training: Selective Alignment Strategy for Preference Optimization."</h4>
+                            <p class="publication-venue"><em>arXiv</em>, 2025.</p>
+                            <div class="publication-links">
+                                <a href="https://arxiv.org/abs/2507.07725" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                                <a href="https://github.com/Dongzhijin/SDPO" class="pub-link"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="publication-item">
+                        <div class="publication-year">2024</div>
+                        <div class="publication-content">
+                            <h4><strong>Zhijin Dong</strong>, Hongzhi Liu*, Boyuan Ren, Weimin Xiong, Zhonghai Wu. "Multi-Normal Prototypes Learning for Weakly Supervised Anomaly Detection."</h4>
+                            <p class="publication-venue"><em>arXiv</em>, 2024. Under review.</p>
+                            <div class="publication-links">
+                                <a href="https://arxiv.org/abs/2408.14498" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                                <a href="https://github.com/Dongzhijin/MNPWAD" class="pub-link"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="publication-item">
+                        <div class="publication-year">2024</div>
+                        <div class="publication-content">
+                            <h4>Wenxuan Zhang, Hongzhi Liu*, <strong>Zhijin Dong</strong>, Yingpeng Du, Chen Zhu, Yang Song, Hengshu Zhu, Zhonghai Wu. "Bridging the Information Gap Between Domain-Specific Model and General LLM for Personalized Recommendation."</h4>
+                            <p class="publication-venue"><em>Web and Big Data</em>, Springer Nature Singapore, 2024, pp. 280--294.</p>
+                            <div class="publication-links">
+                                <a href="https://doi.org/10.1007/978-981-97-7232-2_19" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Awards & Honors</h2>
-            <ul>
-                <li><strong>2024.12</strong>: Peking University Merit Student</li>
-                <li><strong>2023.12</strong>: Third Prize, 20th Huawei Cup China Graduate Mathematical Contest in Modeling</li>
-                <li><strong>2021.10</strong>: Peking University Excellent Study Award</li>
-                <li><strong>2021.5</strong>: Third Prize, 19th AcWing Cup Programming Contest</li>
-                <li><strong>2020.10</strong>: National Encouragement Scholarship</li>
-            </ul>
+        <section id="awards" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Awards & Honors</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="section-content">
+                <div class="awards-timeline">
+                    <div class="award-item">
+                        <div class="award-year">2024.12</div>
+                        <div class="award-content">
+                            <i class="fas fa-trophy"></i>
+                            <span>Peking University Merit Student</span>
+                        </div>
+                    </div>
+                    <div class="award-item">
+                        <div class="award-year">2023.12</div>
+                        <div class="award-content">
+                            <i class="fas fa-medal"></i>
+                            <span>Third Prize, 20th Huawei Cup China Graduate Mathematical Contest in Modeling</span>
+                        </div>
+                    </div>
+                    <div class="award-item">
+                        <div class="award-year">2021.10</div>
+                        <div class="award-content">
+                            <i class="fas fa-award"></i>
+                            <span>Peking University Excellent Study Award</span>
+                        </div>
+                    </div>
+                    <div class="award-item">
+                        <div class="award-year">2021.5</div>
+                        <div class="award-content">
+                            <i class="fas fa-code"></i>
+                            <span>Third Prize, 19th AcWing Cup Programming Contest</span>
+                        </div>
+                    </div>
+                    <div class="award-item">
+                        <div class="award-year">2020.10</div>
+                        <div class="award-content">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>National Encouragement Scholarship</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <!-- <section>
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:2301210605@pku.edu.cn">2301210605@pku.edu.cn</a></p>
-            <p>GitHub: <a href="https://github.com/Dongzhijin">Dongzhijin</a></p>
-            <p>Homepage: <a href="https://dongzhijin.github.io">dongzhijin.github.io</a></p>
-        </section> -->
-        <footer>
-            <p>&copy; 2025 Zhijin Dong. All rights reserved.</p>
-        </footer>
     </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Zhijin Dong. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>
